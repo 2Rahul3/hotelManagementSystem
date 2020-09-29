@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelManagementSystem.newReserveScreenController">
+   <children>
+      <StackPane layoutX="91.0" layoutY="94.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="1100.0" pickOnBounds="true" StackPane.alignment="CENTER">
+               <image>
+                  <Image url="@../Images/hotelRoom2.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" maxHeight="600.0" maxWidth="1000.0" StackPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="30.0" maxWidth="250.0" minHeight="30.0" minWidth="250.0" opacity="0.75" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+                     <children>
+                        <Label text="Booking Room" textFill="#b92c2c">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" maxHeight="450.0" maxWidth="1000.0" minHeight="450.0" minWidth="1000.0" opacity="0.75" spacing="50.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <GridPane maxWidth="425.0" minWidth="425.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" />
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="240.0" prefWidth="240.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="27.0" minWidth="27.0" prefWidth="27.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Name : " />
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Phone No. : " GridPane.rowIndex="3" />
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Address : " GridPane.rowIndex="2" />
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Email : " GridPane.rowIndex="1" />
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="No. of People : " GridPane.rowIndex="4" />
+                              <TextField fx:id="nameTextField" promptText="Customer's Name" styleClass="TextField" stylesheets="@style.css" GridPane.columnIndex="2" />
+                              <TextField fx:id="phoneNoTextField" promptText="Phone Number" styleClass="TextField" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <TextArea fx:id="addressTextArea" prefHeight="200.0" prefWidth="200.0" styleClass="TextArea" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <ComboBox fx:id="noofPeopleComboBox" minWidth="200.0" styleClass="combo-box_newRes" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <ComboBox fx:id="roomTypeComboBox" minWidth="200.0" onAction="#addRoomNumbersToComboBox" styleClass="combo-box_newRes" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <ComboBox fx:id="serviceComboBox" minWidth="200.0" styleClass="combo-box_newRes" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                              <TextField fx:id="emailTextField" promptText="Customer's Email Address" styleClass="TextField" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Service : " GridPane.rowIndex="6" />
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Room Type : " GridPane.rowIndex="5" />
+                           </children>
+                        </GridPane>
+                        <GridPane maxWidth="425.0" minWidth="425.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10px;">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" />
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="240.0" prefWidth="240.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="27.0" minWidth="27.0" prefWidth="27.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Room No. : " />
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Arrival Date : " GridPane.rowIndex="1" />
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Departure Date : " GridPane.rowIndex="2" />
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Price/night ($) : " GridPane.rowIndex="4" />
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Total ($) : " GridPane.rowIndex="5" />
+                              <ComboBox fx:id="roomNoComboBox" minWidth="200.0" styleClass="combo-box_newRes" stylesheets="@style.css" GridPane.columnIndex="2" />
+                              <DatePicker fx:id="arrivalDatePicker" styleClass="DatePicker" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <DatePicker fx:id="departureDatePicker" onAction="#setDurationValue" styleClass="DatePicker" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Label fx:id="priceLabel" stylesheets="@style.css" text="--$--" textFill="#2b2ebc" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Payment Type : " GridPane.rowIndex="6" />
+                              <Label styleClass="labelProjectSetting" stylesheets="@style.css" text="Duration : " GridPane.rowIndex="3" />
+                              <Label fx:id="durationLabel" text=" 0" textFill="#2b2ebc" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="totalLabel" text="--$--" textFill="#2b2ebc" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="paymentTypeComboBox" prefWidth="150.0" styleClass="combo-box_newRes" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                           </children>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets left="50.0" right="50.0" top="30.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" minHeight="100.0" opacity="0.75" spacing="70.0">
+                     <children>
+                        <Button minWidth="135.0" mnemonicParsing="false" onAction="#bookButtonClicked" styleClass="buttonMedium" stylesheets="@style.css" text="Book" />
+                        <Button minWidth="135.0" mnemonicParsing="false" onAction="#resetButtonClicked" styleClass="buttonMedium" stylesheets="@style.css" text="Reset" />
+                        <Button fx:id="cancelButton" minWidth="135.0" mnemonicParsing="false" onAction="#cancelButtonClicked" styleClass="buttonMedium" stylesheets="@style.css" text="Cancel" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

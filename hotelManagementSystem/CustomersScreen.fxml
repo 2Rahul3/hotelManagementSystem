@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="1100.0" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelManagementSystem.customersController">
+   <children>
+      <StackPane fx:id="stackPane" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="599.0" fitWidth="1100.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/splashScreenImage.jpg" />
+               </image></ImageView>
+            <VBox opacity="0.8" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <LineChart fx:id="lineChart" style="-fx-background-color: #ffffff;" styleClass="labelProjectSetting" stylesheets="@style.css" title="Customer / Year (Last 5 Years)" VBox.vgrow="ALWAYS">
+                    <xAxis>
+                      <CategoryAxis label="Months" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis label="Customers" side="LEFT" styleClass="labelProjectSetting" stylesheets="@style.css" tickLabelFill="#a22a2a" tickLabelGap="5.0" upperBound="300.0">
+                           <tickLabelFont>
+                              <Font name="System Bold" size="12.0" />
+                           </tickLabelFont>
+                        </NumberAxis>
+                    </yAxis>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </LineChart>
+                  <HBox alignment="CENTER" minHeight="75.0">
+                     <children>
+                        <Button fx:id="closeButton" minWidth="75.0" mnemonicParsing="false" onAction="#closeButtonClicked" styleClass="buttonMedium" stylesheets="@style.css" text="Close" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

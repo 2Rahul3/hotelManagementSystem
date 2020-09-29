@@ -1,0 +1,166 @@
+.table-column {
+-fx-alignment: CENTER;
+-fx-text-fill: BLACK;
+-fx-font-weight: BOLD;
+-fx-font-size: 11;
+}
+
+.table-row-cell:hover {
+-fx-background-color: #fec611;
+}
+
+.table-row-cell .jfx-rippler {
+-fx-rippler-fill: #ffffff;
+}
+
+.button {
+-fx-background-color: #a22a2a;
+-fx-background-radius:20;
+-fx-font-size: 30;
+-fx-font-weight:bold;
+-fx-text-fill: #ffffff;
+}
+
+.button:hover {
+-fx-background-color: white;
+-fx-background-radius:20;
+-fx-font-size: 30;
+-fx-font-weight:bold;
+-fx-text-fill: black;
+-fx-border-color: black;
+-fx-border-radius: 20;
+-fx-border-width: 5;
+}
+
+.button:pressed {
+-fx-background-color: white;
+-fx-background-radius:20;
+-fx-font-size: 30;
+-fx-font-weight:bold;
+-fx-text-fill: black;
+-fx-border-color: black;
+-fx-border-radius: 20;
+-fx-border-width: 5;
+-fx-rotate: 20;
+}
+
+.buttonSmall {
+-fx-background-color: #a22a2a;
+-fx-background-radius:14;
+-fx-font-size: 15;
+-fx-font-weight:bold;
+-fx-text-fill: #ffffff;
+}
+
+.buttonSmall:hover {
+-fx-background-color: white;
+-fx-background-radius:14;
+-fx-font-size: 15;
+-fx-font-weight:bold;
+-fx-text-fill: black;
+-fx-border-color: black;
+-fx-border-radius: 12;
+-fx-border-width: 2px;
+}
+
+.buttonSmall:pressed {
+-fx-background-color: white;
+-fx-background-radius:14;
+-fx-font-size: 15;
+-fx-font-weight:bold;
+-fx-text-fill: black;
+-fx-border-color: black;
+-fx-border-radius: 12;
+-fx-border-width: 2px;
+-fx-rotate: 20;
+}
+
+.buttonMedium {
+-fx-background-radius:14;
+-fx-background-color: #a22a2a;
+-fx-font-size: 20;
+-fx-font-weight:bold;
+-fx-text-fill: #ffffff;
+}
+
+.buttonMedium:hover {
+-fx-background-radius:14;
+-fx-background-color: white;
+-fx-font-size: 20;
+-fx-font-weight:bold;
+-fx-text-fill: black;
+-fx-border-color: black;
+-fx-border-radius: 12;
+-fx-border-width: 4px;
+}
+
+.buttonMedium:pressed {
+-fx-background-radius:14;
+-fx-background-color: white;
+-fx-font-size: 20;
+-fx-font-weight:bold;
+-fx-text-fill: black;
+-fx-border-color: black;
+-fx-border-radius: 12;
+-fx-border-width: 2px;
+-fx-rotate: 20;
+}
+
+.labelProjectSetting {
+-fx-font-size: 15;
+-fx-font-weight: bold;
+-fx-text-fill: #a22a2a;
+}
+
+.TextField {
+-fx-background-color: #f8eed3;
+-fx-font-family: Arial;
+-fx-font-weight: bold;
+-fx-text-fill: black;
+-fx-font-size: 12px;
+-fx-border-color: black;
+}
+
+.TextArea {
+-fx-background-color: #f8eed3;
+-fx-font-family: Arial;
+-fx-font-weight: bold;
+-fx-text-fill: black;
+-fx-font-size: 12px;
+-fx-border-color: black;
+}
+
+.DatePicker {
+-fx-background-color: #f8eed3;
+-fx-font-family: Arial;
+-fx-font-weight: bold;
+-fx-text-fill: black;
+-fx-font-size: 12px;
+-fx-border-color: black;
+}
+
+.pane:hover {
+-fx-background-color: #377ce8;
+}
+
+.combo-box {
+-fx-background-radius: 12px;
+-fx-background-color: #c3adad;
+-fx-font-size: 12px;
+-fx-font-weight: bold;
+}
+
+.combo-box_newRes {
+-fx-background-radius: 12px;
+-fx-background-color: #f8eed3;
+-fx-font-size: 12px;
+-fx-font-weight: bold;
+}
+
+.addRoomTextField {
+-fx-background-radius: 12px;
+-fx-background-color: #c3adad;
+-fx-font-size: 12px;
+-fx-font-weight: bold;
+}
+
