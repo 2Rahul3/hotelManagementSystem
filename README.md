@@ -1,7 +1,7 @@
 # Hotel Management System
 A practice project for beginner Java/JavaFX learner.
 
-Any new learner can view and/or review code to understand how Java/JavaFx/SQLite works together. Code uses Java 11/JavaFX and SQlite3 for database.
+Any new learner can view and/or review code to understand how Java/JavaFx/SQLite3 works together. Code uses Java 11/JavaFX and SQlite3 for database.
 
 Feel free to Fork or Copy code. This might help you to get started.
 
